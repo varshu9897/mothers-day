@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Women's Day Amma</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="hearts"></div>
+
+<!-- First Page -->
+
+<div class="card" id="mainPage">
+
+<h1 class="glows">Happy Women's Day Amma</h1>
+
+<img src="dress.jpeg" alt="My Mother">
+
+<p>
+Dear Amma,<br><br>
+Thank you for your love, care and support.
+You are the strongest and most beautiful woman in my life.
+We are proud to be your daughters.
+</p>
+
+<button onclick="showMessage()">Click for Surprise</button>
+
+</div>
+
+
+<!-- Surprise Page -->
+
+<div class="card" id="surprisePage">
+
+<h1>Surprise</h1>
+
+<img src="light.jpeg" alt="My Mother">
+
+<p class="message">
+
+<b>Amma</b>,<br><br>
+
+You are the person who brought light into our lives.<br>
+You are the person who always brings a smile to our faces.<br>
+You are the person who always wipes our tears.<br>
+You are the person who can never be replaced by anyone.<br>
+You are the person who sacrifices her happiness for us.<br><br>
+
+<span class="glow">♥ ♥ We Love You Amma ♥ ♥</span>
+
+</p>
+
+</div>
+
+
+<!-- Audio -->
+
+<audio id="mysong">
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+
+document.getElementById("surprisePage").style.display="none";
+
+function showMessage(){
+
+document.getElementById("mainPage").style.display="none";
+document.getElementById("surprisePage").style.display="block";
+
+document.getElementById("mysong").play();
+
+}
+
+</script>
+
+</body>
+</html>
